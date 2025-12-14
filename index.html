@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Class 11A – Digital Attendance Dashboard</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Student Name</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Status</th>
+                <th>Day Value</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Rows generated dynamically -->
+        </tbody>
+    </table>
+
+    <div class="controls">
+        <button onclick="calculateMonthly()">Calculate Monthly Attendance</button>
+    </div>
+
+    <div id="monthlyResults" class="monthly-results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
